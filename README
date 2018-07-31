@@ -1,0 +1,24 @@
+
+This sample code is referred from the link:
+http://blog.codinglabs.org/articles/intro-of-nginx-module-development.html
+
+1. Build the static module in the nginx source code
+1)./configure --prefix=/usr/local/nginx --add-module=/Users/rovin/Documents/media/nginx-echo-module
+2)make
+3)sudo make install
+
+2. Build the dynamic module in the nginx source code
+1)./configure --prefix=/usr/local/nginx --add-dynamic-module=/Users/rovin/Documents/media/nginx-echo-module
+2)make
+3)sudo make install
+
+3. Modify the nginx conf file
+    sudo vi /usr/local/nginx/conf/nginx.conf
+    
+4. Start the nginx
+    sudo /usr/local/nginx/sbin/nginx
+    
+5. Stop the nginx
+    sudo /usr/local/nginx/sbin/nginx -s stop
+
+
